@@ -1,0 +1,279 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #f5ead8;
+    color: #594b3c;
+    letter-spacing: 0.3px;
+}
+
+/* ============================= */
+/* CABEÇALHO */
+/* ============================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: #b8cdb1;
+    border-bottom: 3px solid #e9a875;
+    box-shadow: 0 3px 12px rgba(70, 60, 40, 0.08);
+}
+
+logo {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #526b4d;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d88955;
+    box-sizing: border-box;
+}
+
+ /* MENU DE NAVEGAÇÃO */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 18px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #e9a875;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+     background-color: #d88955;
+    transform: translateY(-2px);
+}
+
+
+/* PESQUISA */
+
+#searchInput {
+    width: 260px;
+    height: 43px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: 1px solid #d5dfc9;
+    background-color: white;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    color: #594b3c;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #d88955;
+    box-shadow: 0 0 6px rgba(216, 137, 85, 0.25);
+}
+
+/* BOTÃO DA PESQUISA */
+
+.pesquisa button,
+button[type="search"] {
+    background-color: #e9a875;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pesquisa button:hover,
+button[type="search"]:hover {
+    background-color: #d88955;
+}
+
+/* ============================= */
+/* DELIVERY */
+/* ============================= */
+
+header > a:last-child {
+    background-color: #e9a875;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 3px 7px rgba(90, 60, 30, 0.10);
+}
+
+header > a:last-child:hover {
+    background-color: #d88955;
+    transform: translateY(-2px);
+}
+
+
+/* CAIXA DO FORMULÁRIO */
+
+.feedback-container {
+    background-color: #fffaf2;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #d5dfc9;
+    box-shadow: 0 5px 15px rgba(80, 65, 45, 0.10);
+}
+
+.feedback-container h1 {
+    color: #65805c;
+    text-align: center;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.feedback-container p {
+    text-align: center;
+    color: #756657;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* CAMPOS */
+
+form label {
+    display: block;
+    color: #526b4d;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #c5d5b5;
+    border-radius: 10px;
+    background-color: white;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #e9ad86;
+}
+
+/* BOTÃO ENVIAR */
+
+form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e9a875;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #d88955;
+}
+
+/* FEEDBACKS FICTÍCIOS */
+
+.comentarios {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.comentarios h2 {
+    text-align: center;
+    color: #65805c;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.lista-feedbacks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* QUADRADINHOS */
+
+.feedback-card {
+    background-color: #dce7d5;
+    border: 2px solid #b8cdb1;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 10px rgba(80, 65, 45, 0.08);
+    transition: 0.3s;
+}
+
+.feedback-card:hover {
+    transform: translateY(-4px);
+}
+
+.feedback-card h3 {
+    color: #526b4d;
+    font-family: Georgia, serif;
+    margin-bottom: 12px;
+}
+
+.feedback-card p {
+    color: #594b3c;
+    line-height: 1.7;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .feedback-container {
+        margin: 25px 15px;
+        padding: 25px;
+    }
+
+    .lista-feedbacks {
+        grid-template-columns: 1fr;
+    }
+
+    .comentarios {
+        margin: 25px 10px;
+    }
+}
